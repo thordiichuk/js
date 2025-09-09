@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 5 Hordiichuk</title>
+
+    <style>
+        p{
+        color: red;
+        font-size: 22px;
+        font-weight: bolder;
+        }
+
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function okno_zamknij_hordiichuk(){
+            window.close();
+        }
+
+        function WinOpen_hordiichuk_1(){
+            window.open("grafika1_hordiichuk.html", "grafika1", "toolbar=no,directories=no,menubar=no,height=300px,width=200px, top=260, left=50");
+        }
+
+         function WinOpen_hordiichuk_2(){
+            window.open("grafika2_hordiichuk.html", "grafika2", "toolbar=no,directories=no,menubar=no,height=300px,width=200px, top=180, left=350");
+        }
+
+         function WinOpen_hordiichuk_3(){
+            window.open("grafika3_hordiichuk.html", "grafika3", "toolbar=no,directories=no,menubar=no,height=300px,width=200px, top=100, left=650");
+        }
+
+         function WinOpen_hordiichuk_4(){
+            window.open("grafika4_hordiichuk.html", "grafika4", "toolbar=no,directories=no,menubar=no,height=300px,width=200px, top=20, left=950");
+        }
+    </script>
+
+    <p>Wykonała Tetiana Hordiichuk mój numer w dzienniku 7, czyli mam układ [(7) mod 4 = 3] układ 3</p>
+    <br>
+    <form >
+        <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_hordiichuk_1()">
+        <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_hordiichuk_2()">
+        <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_hordiichuk_3()">
+        <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_hordiichuk_4()"> <br> <br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiichuk()"/> 
+    </form>
+</body>
+</html>
