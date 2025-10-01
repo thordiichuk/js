@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadahnie 16</title>
+</head>
+<body>
+    <div style="color: darkblue;">
+        <script>
+            var liczba1 = prompt("Podaj liczbę pierszą:");
+            var liczba2 = prompt("Podaj liczbę drugą:");
+
+            var a_hor = parseFloat(liczba1);
+            var b_hor = parseFloat(liczba2);
+
+            let wynik_hor = a_hor**3+a_hor**2*b_hor*3 + b_hor**2*a_hor*3+b_hor**3;
+           
+            document.write("Wczytane liczby: <br>");
+            document.write("A = " + a_hor + "  B = " + b_hor +"")
+            document.write(("<br> <br> (" + a_hor +"+" + b_hor +")^3 = " + a_hor + "^3 + 3*(("+ a_hor +"^2)*(2) + 3*("+ a_hor +")*((" + b_hor +")^2) + "+ b_hor + "^3 ="+ a_hor**3 + "+" + (a_hor**2)*3*b_hor + "+" + 3*a_hor*(b_hor**2)+ "+" + b_hor**3 +" = " + wynik_hor + "").fontsize(25));
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 12</title>
+</head>
+<body>
+    <textarea cols="100" rows="42">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 11</title>
+</head>
+<body>
+    <div style="color: darkolivegreen; font-size: 55px;">
+    <script>
+    let jedenDzien_hor = 24*60*60;
+    let jednaGodzina_hor = 60*60;
+
+    let dzien1_hor = prompt("Dzien 1: ");
+    let godzina1_hor = prompt("Godzina 1: ");
+    let dzien2_hor = prompt("Dzien 2: ");
+    let godzina2_hor = prompt("Godzina 2: ");
+
+    let iloscDni_hor = dzien1_hor-dzien2_hor;
+    let iloscGodzin_hor = godzina1_hor-godzina2_hor;
+    let mineloSekund_hor = iloscDni_hor*jedenDzien_hor+iloscGodzin_hor*jednaGodzina_hor;
+
+    document.write("Ilość sekund międy dniami: "+mineloSekund_hor+"sekund");
+
+
+    function okno_zamknij(){
+        window.close()
+    }
+    </script>
+    </div>
+
+    <form>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()">
+    </form>
+</body>
+</html>
+
+
+<!--Tetiana Hordiichuk
+Zadanie 12-->
+    </textarea>
+</body>
+</html>

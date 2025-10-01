@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 13</title>
+</head>
+<body>
+    <script>
+        let m_hor = prompt("Wpisz liczbę: ");
+        let m_hor_copy = m_hor;
+        
+        let m2_hor = m_hor_copy++;
+        let m3_hor = m_hor_copy*m2_hor;
+        
+        document.write("1/" + m_hor + "= 1/" + m_hor_copy + "+ 1/" + m3_hor + "");
+
+        function okno_zamknij(){ 
+                window.close() }
+    </script>
+
+    <form>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+    </form>
+</body>
+</html>
+
+<!--Tetiana Hordiichuk 18.09.25
+Zadanie 13-->
