@@ -30,7 +30,7 @@
         let yB_hor=parseFloat(document.getElementById('yB_hor').value);
 
         let wynik_hor= Math.sqrt(Math.pow((xA_hor-xB_hor),2) + Math.pow((yA_hor-yB_hor),2));
-        document.getElementById('wynikAB_hor').innerHTML="Długość boku AB = " + wynik_hor + "";}
+        document.getElementById('wynikAB_hor').innerHTML="Długość boku AB = " + wynik_hor.toFixed(2) + "";}
 
         function BC_hor(){
         let xA_hor=parseFloat(document.getElementById('xB_hor').value);
@@ -39,7 +39,7 @@
         let yB_hor=parseFloat(document.getElementById('yC_hor').value);
 
         let wynik_hor= Math.sqrt(Math.pow(xA_hor-xB_hor,2) + Math.pow(yA_hor-yB_hor,2));
-        document.getElementById('wynikBC_hor').innerHTML="Długość boku BC = " + wynik_hor + "";}
+        document.getElementById('wynikBC_hor').innerHTML="Długość boku BC = " + wynik_hor.toFixed(2) + "";}
 
         function CA_hor(){
         let xA_hor=parseFloat(document.getElementById('xC_hor').value);
@@ -48,7 +48,7 @@
         let yB_hor=parseFloat(document.getElementById('yA_hor').value);
 
         let wynik_hor= Math.sqrt(Math.pow(xA_hor-xB_hor,2) + Math.pow(yA_hor-yB_hor,2));
-        document.getElementById('wynikCA_hor').innerHTML="Długość boku CA = " + wynik_hor + "";}
+        document.getElementById('wynikCA_hor').innerHTML="Długość boku CA = " + wynik_hor.toFixed(2) + "";}
         
     </script>
 
