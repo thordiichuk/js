@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 20</title>
+
+    <style>
+        .punkt{
+            width: 15px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        function AB_hor(){
+        let xA_hor=parseFloat(document.getElementById('xA_hor').value);
+        let yA_hor=parseFloat(document.getElementById('yA_hor').value);
+        let xB_hor=parseFloat(document.getElementById('xB_hor').value);
+        let yB_hor=parseFloat(document.getElementById('yB_hor').value);
+
+        let wynik_hor= Math.sqrt(Math.pow((xA_hor-xB_hor),2) + Math.pow((yA_hor-yB_hor),2));
+        document.getElementById('wynikAB_hor').innerHTML="Długość boku AB = " + wynik_hor + "";}
+
+        function BC_hor(){
+        let xA_hor=parseFloat(document.getElementById('xB_hor').value);
+        let yA_hor=parseFloat(document.getElementById('yB_hor').value);
+        let xB_hor=parseFloat(document.getElementById('xC_hor').value);
+        let yB_hor=parseFloat(document.getElementById('yC_hor').value);
+
+        let wynik_hor= Math.sqrt(Math.pow(xA_hor-xB_hor,2) + Math.pow(yA_hor-yB_hor,2));
+        document.getElementById('wynikBC_hor').innerHTML="Długość boku BC = " + wynik_hor + "";}
+
+        function CA_hor(){
+        let xA_hor=parseFloat(document.getElementById('xC_hor').value);
+        let yA_hor=parseFloat(document.getElementById('yC_hor').value);
+        let xB_hor=parseFloat(document.getElementById('xA_hor').value);
+        let yB_hor=parseFloat(document.getElementById('yA_hor').value);
+
+        let wynik_hor= Math.sqrt(Math.pow(xA_hor-xB_hor,2) + Math.pow(yA_hor-yB_hor,2));
+        document.getElementById('wynikCA_hor').innerHTML="Długość boku CA = " + wynik_hor + "";}
+        
+    </script>
+
+    
+    Podaj punkt A: x <input type="text" id="xA_hor" value="" class="punkt"> y <input type="text" id="yA_hor" value="" class="punkt"> <br><br>
+    Podaj punkt B: x <input type="text" id="xB_hor" value="" class="punkt"> y <input type="text" id="yB_hor" value="" class="punkt"> <br><br>
+    Podaj punkt C: x <input type="text" id="xC_hor" value="" class="punkt"> y <input type="text" id="yC_hor" value="" class="punkt"> <br><br>
+    
+    <input type="button" id="oblicz_hor" value="Oblicz długości" onclick="AB_hor() &BC_hor() &CA_hor()">
+    
+
+    <div id="wynikAB_hor" style="color:red;font-size:50px;"></div>
+    <div id="wynikBC_hor" style="color:red;font-size:50px;"></div>
+    <div id="wynikCA_hor" style="color:red;font-size:50px;"></div>
+</body>
+</html>

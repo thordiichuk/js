@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 23</title>
+
+    <style>
+        input[type="text"]{
+            width: 30px;
+        }
+        input[type="text"]:last-of-type{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    function dlugosc_hor(d_hor, x_hor){
+        let dlugosc_hor = Math.sqrt(Math.pow(d_hor, 2) + Math.pow(x_hor, 2));
+        document.getElementById('dlugosc').value = dlugosc_hor.toFixed(2);
+    }
+
+    function alfa_hor(d_hor, x_hor){
+        let alfaRadiany_hor = Math.atan(d_hor / x_hor);
+        let alfaStopni_hor = (alfaRadiany_hor * 180) / Math.PI;
+        document.getElementById('alfa').value = alfaStopni_hor.toFixed(2);
+    }
+
+    function oblicz(){
+        let d_hor = parseFloat(document.getElementById('d_hor').value);
+        let x_hor = parseFloat(document.getElementById('x_hor').value);
+        dlugosc_hor(d_hor, x_hor);
+        alfa_hor(d_hor, x_hor);
+    }
+</script>
+
+    <h1>Obliczenie kąta nachylenia i długości drabiny</h1>
+
+    Podaj D-wysokość oparcia drabiny: <input type="text" id="d_hor"> <br><br>
+    Podaj X-odległość oparcia drabiny: <input type="text" id="x_hor"> <br><br>
+
+    <input type="button" value="Oblicz" onclick="oblicz()"> <br><br>
+
+    Długość drabiny <input type="text" id="dlugosc">
+    Kąt nachylenia drabiny <input type="text" id="alfa">
+</body>
+</html>

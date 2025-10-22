@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 19</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="32">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 19</title>
+</head>
+<body>
+    <script>
+        function pole_hor(){
+        let bok_hor=parseFloat(document.getElementById('dlugosc').value);
+        let wynik_hor=bok_hor**2;
+        document.getElementById('nazwa').innerHTML="Pole kwadratu = " + wynik_hor.toFixed(2) + " cm^2";}
+
+        function obwod_hor(){
+        let bok_hor=parseFloat(document.getElementById('dlugosc').value);
+        let wynik_hor=bok_hor*4;
+        document.getElementById('nazwa').innerHTML="Obwód kwadratu = " + wynik_hor.toFixed(2) + " cm";}
+    </script>
+
+
+    <h1>Wszystko o kwadracie</h1>
+    Podaj dlugość boku: <input type="text" id="dlugosc" value=""> cm <br><br>
+
+    <input type="button" id="pole" value="Oblicz pole" onclick="pole_hor()">
+    <input type="button" id="obwód" value="Oblicz obwod" onclick="obwod_hor()">
+
+    <div id="nazwa" style="color:red;font-size:50px;"></div>
+</body>
+</html>
+    </textarea>
+</body>
+</html>
