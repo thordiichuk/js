@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 32</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="38">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanei 32</title>
+</head>
+<body>
+    <script>
+        function mebel(rodzaj_hor, kolor_hor, wysokosc_hor, szerokosc_hor){
+            this.rodzaj=rodzaj_hor;
+            this.kolor=kolor_hor;
+            this.wysokosc=wysokosc_hor;
+            this.szerokosc=szerokosc_hor;
+        }
+
+        mebel.prototype.wypisz=function(){
+            alert(this.rodzaj + " " + this.kolor + " " + this.wysokosc + " " + this.szerokosc)
+        }
+
+        let mebel1 = new mebel('Szafka', 'Biały', '50cm', '60cm');
+        let mebel2 = new mebel('Kanapa', 'Niebieski', '80cm' , '150cm');
+        let mebel3 = new mebel('Krzesło', 'Różowy', '70cm','50cm');
+
+        mebel1.wypisz();
+        mebel2.wypisz();
+        mebel3.wypisz();
+
+        document.write("dostęp do właściwości"+"<br>"); 
+
+        document.write("Mebel 1 " + mebel1.rodzaj + " " + mebel1.kolor + " " + mebel1.wysokosc + " " + mebel1.szerokosc);
+        document.write("<br>Mebel 2 " + mebel2.rodzaj + " " + mebel2.kolor + " " + mebel2.wysokosc + " " + mebel2.szerokosc);
+        document.write("<br>Mebel 2 " + mebel3.rodzaj + " " + mebel3.kolor + " " + mebel3.wysokosc + " " + mebel3.szerokosc);
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>
