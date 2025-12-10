@@ -1,141 +1,146 @@
 <html> 
      <head> 
-            <title>Hordiichuk 2P</title> 
-            <script language="JavaScript"> 
-            function WinOpen_hord(z,h,w,t,l){
-                  window.open("z"+z+"_hord.html","okienko"+z,"toolbar=no,directories=no,menubar=no, height="+h+ ",width=" +w+ ", top="+t+", left="+l)
-            }
-
-            function WinOpen_hord_kod(z,h,w,t,l){
-                  window.open("z"+z+"_hord_kod.html","okienko"+z,"toolbar=no,directories=no,menubar=no, height="+h+ ",width=" +w+ ", top="+t+", left="+l)
-            }
-
-            function okno_zamknij(){ 
-                  window.close() } 
-          </script> 
+            <meta charset="utf-8">
+            <title>Hordiichuk 2P</title>
       </head> 
 <body> 
 
       <p style="font-size: 2cm; color: red; font-weight: bolder;">Skielet zaliczeniowy JavaScript Tetiana Hordiichuk 2P</p>
 
-   <form> 
-      <input type="button_z1" name="zadanie1" value="zadanie1-hordiichuk" onclick="WinOpen_hord(1,380,360,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+      <script language="JavaScript"> 
+            function WinOpen_hord(z){
+                  window.open("z"+z+"_hord.html","okienko"+z,"toolbar=no,directories=no,menubar=no, height=600,width=1000, top=100, left=200")
+            }
 
-      <input type="button_z2" name="zadanie2" value="zadanie2-hordiichuk" onclick="WinOpen_hord(2,380,360,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            function WinOpen_hord_kod(z){
+                  window.open("z"+z+"_hord_kod.html","okienko"+z,"toolbar=no,directories=no,menubar=no, height=600,width=1000, top=100, left=200")
+            }
 
-      <input type="button_z3" name="zadanie3" value="zadanie3-hordiichuk" onclick="WinOpen_hord(3,280,160,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            function okno_zamknij(){ 
+                  window.close(); }
+            
+            function zadanie_hord(z,kod,hr){
+                  document.write("<input type=button  value= zadanie"+z+"-hordiichuk  onclick=  WinOpen_hord("+z+")> &nbsp;");
+                  if (kod==1){
+                        document.write("<input type=button  value= zadanie"+z+"-hordiichuk_kod  onclick=  WinOpen_hord_kod("+z+")>");
+                        document.write(" <br><br> <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>");
+                  }
+                  if (hr==1){
+                        document.write(" <br><br> <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>");}
+            }
 
-      <input type="button_z4" name="zadanie4" value="zadanie4-hordiichuk" onclick="WinOpen_hord(4,1200,1000)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(1,0,1);
 
-      <input type="button_z5" name="zadanie5" value="zadanie5-hordiichuk" onclick="WinOpen_hord(5,200,600,600,450)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(2,0,1);
 
-      <input type="button_z6" name="zadanie6" value="zadanie6-hordiichuk" onclick="WinOpen_hord(6,1200,1000)"><br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(3,0,1);
+            
+            zadanie_hord(4,0,1);
 
-      <input type="button_z7" name="zadanie7" value="zadanie7-hordiichuk" onclick="WinOpen_hord(7,380,1000)"><br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(5,0,1);
 
-      <input type="button_z8" name="zadanie8" value="zadanie8-hordiichuk" onclick="WinOpen_hord(8,380,1000,200,200)"><br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(6,0,1);
 
-      <input type="button_z9" name="zadanie9" value="zadanie9-hordiichuk" onclick="WinOpen_hord(9,380,1000,200,200)"><br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(7,0,1);
 
-      <input type="button_z10" name="zadanie10" value="zadanie10-hordiichuk" onclick="WinOpen_hord(10,380,1000,200,200)"><br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(8,0,1);
 
-      <input type="button_z11" name="zadanie11" value="zadanie11-hordiichuk" onclick="WinOpen_hord(11,380,1000,200,200)">
-      <input type="button_z11_kod" name="zadanie11_kod" value="zadanie11-hordiichuk_kod" onclick="WinOpen_hord_kod(11,700,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(9,0,1);
 
-      <input type="button_z12" name="zadanie12" value="zadanie12-hordiichuk" onclick="WinOpen_hord(12,380,1000,200,200)">
-      <input type="button_z12_kod" name="zadanie12_kod" value="zadanie12-hordiichuk_kod" onclick="WinOpen_hord_kod(12,700,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(10,0,1);
 
-      <input type="button_z13" name="zadanie13" value="zadanie13-hordiichuk" onclick="WinOpen_hord(13,380,1000,200,200)">
-      <input type="button_z13_kod" name="zadanie13_kod" value="zadanie13-hordiichuk_kod" onclick="WinOpen_hord_kod(13,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(11,1,0);
 
-      <input type="button_z14" name="zadanie14" value="zadanie14-hordiichuk" onclick="WinOpen_hord(14,380,1000,200,200)">
-      <input type="button_z14_kod" name="zadanie14_kod" value="zadanie14-hordiichuk_kod" onclick="WinOpen_hord_kod(14,400,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(12,1,0);
 
-      <input type="button_z15" name="zadanie15" value="zadanie15-hordiichuk" onclick="WinOpen_hord(15,380,1000,200,200)">
-      <input type="button_z15_kod" name="zadanie15_kod" value="zadanie15-hordiichuk_kod" onclick="WinOpen_hord_kod(15,400,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(13,1,0);
 
-      <input type="button_z16" name="zadanie16" value="zadanie16-hordiichuk" onclick="WinOpen_hord(16,380,1000,200,200)">
-      <input type="button_z16_kod" name="zadanie16_kod" value="zadanie16-hordiichuk_kod" onclick="WinOpen_hord_kod(16,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
-      
-      <input type="button_z17" name="zadanie17" value="zadanie17-hordiichuk" onclick="WinOpen_hord(17,380,1000,200,200)">
-      <input type="button_z17_kod" name="zadanie17_kod" value="zadanie17-hordiichuk_kod" onclick="WinOpen_hord_kod(17,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(14,1,0);
 
-      <input type="button_z18" name="zadanie18" value="zadanie18-hordiichuk" onclick="WinOpen_hord(18,380,1000,200,200)">
-      <input type="button_z18_kod" name="zadanie18_kod" value="zadanie18-hordiichuk_kod" onclick="WinOpen_hord_kod(18,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(15,1,0);
 
-      <input type="button_z19" name="zadanie19" value="zadanie19-hordiichuk" onclick="WinOpen_hord(19,380,1000,200,200)">
-      <input type="button_z19_kod" name="zadanie19_kod" value="zadanie19-hordiichuk_kod" onclick="WinOpen_hord_kod(19,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(16,1,0);
 
-      <input type="button_z20" name="zadanie20" value="zadanie20-hordiichuk" onclick="WinOpen_hord(20,380,1000,200,200)">
-      <input type="button_z20_kod" name="zadanie20_kod" value="zadanie20-hordiichuk_kod" onclick="WinOpen_hord_kod(20,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(17,1,0);
 
-      <input type="button_z21" name="zadanie21" value="zadanie21-hordiichuk" onclick="WinOpen_hord(21,380,1000,200,200)">
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(18,1,0);
 
-      <input type="button_z22" name="zadanie22" value="zadanie22-hordiichuk" onclick="WinOpen_hord(22,480,1000,200,200)">
-      <input type="button_z22_kod" name="zadanie22_kod" value="zadanie22-hordiichuk_kod" onclick="WinOpen_hord_kod(22,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(19,1,0);
 
-      <input type="button_z23" name="zadanie23" value="zadanie23-hordiichuk" onclick="WinOpen_hord(23,380,1000,200,200)">
-      <input type="button_z23_kod" name="zadanie23_kod" value="zadanie23-hordiichuk_kod" onclick="WinOpen_hord_kod(23,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(20,1,0);
 
-      <input type="button_z24" name="zadanie24" value="zadanie24-hordiichuk" onclick="WinOpen_hord(24,380,1000,200,200)">
-      <input type="button_z24_kod" name="zadanie24_kod" value="zadanie24-hordiichuk_kod" onclick="WinOpen_hord_kod(24,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(21,0,1);
 
-      <!--<input type="button_z25" name="zadanie25" value="zadanie25-hordiichuk" onclick="WinOpen_hord(25,380,1000,200,200)">
-      <input type="button_z25_kod" name="zadanie25_kod" value="zadanie25-hordiichuk_kod" onclick="WinOpen_hord_kod(25,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(22,1,0);
+            
+            zadanie_hord(23,1,0);
+            
+            zadanie_hord(24,1,0);
 
-      <input type="button_z26" name="zadanie26" value="zadanie26-hordiichuk" onclick="WinOpen_hord(26,380,1000,200,200)">
-      <input type="button_z26_kod" name="zadanie26_kod" value="zadanie26-hordiichuk_kod" onclick="WinOpen_hord_kod(26,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>-->
+            zadanie_hord(25,1,0);
 
-      <input type="button_z27" name="zadanie27" value="zadanie27-hordiichuk" onclick="WinOpen_hord(27,380,1000,200,200)">
-      <input type="button_z27_kod" name="zadanie27_kod" value="zadanie27-hordiichuk_kod" onclick="WinOpen_hord_kod(27,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(26,1,0);
 
-      <input type="button_z28" name="zadanie28" value="zadanie28-hordiichuk" onclick="WinOpen_hord(28,600,1000,200,200)">
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(27,1,0);
 
-      <input type="button_z29 name="zadanie29" value="zadanie29-hordiichuk" onclick="WinOpen_hord(29,600,1000,200,200)">
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(28,0,1);
 
-      <input type="button_z30" name="zadanie30" value="zadanie30-hordiichuk" onclick="WinOpen_hord(30,380,1000,200,200)">
-      <input type="button_z30_kod" name="zadanie30_kod" value="zadanie30-hordiichuk_kod" onclick="WinOpen_hord_kod(30,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(29,0,1);
 
-      <input type="button_z31" name="zadanie31" value="zadanie31-hordiichuk" onclick="WinOpen_hord(31,380,1000,200,200)">
-      <input type="button_z31_kod" name="zadanie31_kod" value="zadanie31-hordiichuk_kod" onclick="WinOpen_hord_kod(31,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(30,1,0);
 
-      <input type="button_z32" name="zadanie32" value="zadanie32-hordiichuk" onclick="WinOpen_hord(32,380,1000,200,200)">
-      <input type="button_z32_kod" name="zadanie32_kod" value="zadanie32-hordiichuk_kod" onclick="WinOpen_hord_kod(32,500,1000,200,200)"> <br><br>
-      <HR SIZE=4 WIDTH=50% ALIGN=LEFT COLOR=red>
+            zadanie_hord(31,1,0);
 
-      
+            zadanie_hord(32,1,0);
+
+            zadanie_hord(35,1,0);
+
+            zadanie_hord(36,1,0);
+
+            zadanie_hord(37,1,0);
+
+            zadanie_hord("'Rozdzielczosc'",1,0);
+
+            zadanie_hord(39,1,0);
+
+            zadanie_hord(40,1,0);
+
+            zadanie_hord(42,1,0);
+
+            zadanie_hord(43,1,0);
+
+            zadanie_hord(44,1,0);
+
+            zadanie_hord(46,1,0);
+
+            zadanie_hord(47,1,0);
+
+            zadanie_hord(48,1,0);
+
+            zadanie_hord(49,1,0);
+
+            zadanie_hord(50,1,0);
+
+            zadanie_hord(51,1,0);
+
+            zadanie_hord(52,1,0);
+
+            zadanie_hord(53,1,0);
+
+            zadanie_hord(54,1,0);
+
+            zadanie_hord(55,1,0);
+
+            zadanie_hord(56,1,0);
+
+            zadanie_hord(57,1,0);
+
+            zadanie_hord(59,1,0);
+
+
+          </script> 
+
       <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
-    </form> 
+
 </body> 
 </html>

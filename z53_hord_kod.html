@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 53</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="43">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 53</title>
+</head>
+<body>
+    <script>
+        let a_hor=parseFloat(prompt("Podaj liczbę a"));
+        let b_hor=parseFloat(prompt("Podaj liczbę b"));
+
+        document.write("&nbsp;".repeat(b_hor)+"b"+"<br>");
+
+        for(i=0;i<b_hor;i++){
+            document.write("*");
+        }
+
+        document.write("<br>");
+
+        for(i=0;i<a_hor-2;i++){
+            let wiersz_hor="*"+"&nbsp;".repeat((b_hor-2)*2);
+
+            for(i=0;i<a_hor-2;i++){
+                document.write(wiersz_hor+"*");
+
+                 if(i==Math.floor(a_hor/2-1)){
+                document.write("&nbsp; ".repeat(5)+"a");
+                }   
+
+                document.write("<br>");
+            }   
+        }
+
+        for(i=0;i<b_hor;i++){
+            document.write("*");
+        }
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

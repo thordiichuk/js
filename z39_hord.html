@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 39</title>
+</head>
+<body>
+
+    <h1 style="color: green;">MENU</h1> <br><br>
+    <h3 style="color: red;">1-CZERWONY</h3>
+    <h3 style="color: blue;">2-NIEBIESKI</h3>
+    <input type="button" name="hordiichuk" value="Oblicz" onclick="fun_hor()" /> 
+    <script> 
+        function fun_hor() { 
+        var x_hor = prompt("Podaj kolor", ""); 
+            if(x_hor == 1 || x_hor.toLowerCase() == "czerwony") { 
+                document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); } 
+            else if(x_hor == 2 || x_hor.toLowerCase() == "niebieski") { 
+                document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); }
+            else{
+                document.write("<h6>brak koloru</h6>")
+            } 
+        } 
+    </script>
+</body>
+</html>

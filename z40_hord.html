@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 40</title>
+
+    <style>
+        input[type=button]{
+            margin-right: 20px;
+            border: 1px solid black;
+            border-radius: 3px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        function zmienne_hor(){
+        let aHor=parseFloat(document.getElementById('aHor').value);
+        let bHor=parseFloat(document.getElementById('bHor').value);
+        return {aHor,bHor};
+    }
+
+        function suma_hor(){
+            const {aHor,bHor} = zmienne_hor();
+            let wynik = aHor+bHor;
+            if(isNaN(aHor) || isNaN(bHor)){
+                document.getElementById('wynik').innerHTML="Proszę uzupełnić pola";}
+            else{
+                document.getElementById('wynik').innerHTML="Wynik wynosi " + wynik.toFixed(2) + "";}
+        }
+
+        function roznica_hor(){
+            const {aHor,bHor} = zmienne_hor();
+            let wynik = aHor-bHor; 
+            if(isNaN(aHor) || isNaN(bHor)){
+                document.getElementById('wynik').innerHTML="Proszę uzupełnić pola";}
+            else{
+                document.getElementById('wynik').innerHTML="Wynik wynosi " + wynik.toFixed(2) + "";}        }
+
+        function iloczyn_hor(){
+            const {aHor,bHor} = zmienne_hor();
+            let wynik = aHor*bHor;
+            if(isNaN(aHor) || isNaN(bHor)){
+                document.getElementById('wynik').innerHTML="Proszę uzupełnić pola";}
+            else{
+                document.getElementById('wynik').innerHTML="Wynik wynosi " + wynik.toFixed(2) + "";}        }
+
+        function iloraz_hor(){
+            const {aHor,bHor} = zmienne_hor();
+            let wynik = aHor/bHor;
+            
+            if(isNaN(aHor) || isNaN(bHor)){
+                document.getElementById('wynik').innerHTML="Proszę uzupełnić pola";}
+            else if(bHor==0){
+                document.getElementById('wynik').innerHTML="Nie wolno dzielić przez zero";
+            }
+            else{
+            document.getElementById('wynik').innerHTML="Wynik wynosi " + wynik.toFixed(2) + "";
+            }
+        }
+
+        function teoria_hor(){
+           // window.open('z40_hord_teoria.html','teoria','width=800px,heigth=600px');
+            window.open("z40_hord_teoria.html","teoria","toolbar=no,directories=no,menubar=no, height=600,width=1000, top=200, left=400")
+
+        }
+    </script>
+
+    <h1>PROSTE DZIAŁANIA</h1> <br><br>
+
+    <h2>Hordiichuk 2P</h2>
+
+    <label for="dodawanie">Podaj liczbę pierwszą</label>
+    <input type="number" id="aHor"> <br> <br>
+
+    <label for="odejmowanie">Podaj liczbę drugą</label>
+    <input type="number" id="bHor"> <br> <br><br>
+
+    <input type="button" value="DODAWANIE" id="dodawanie" onclick="suma_hor()">
+    <input type="button" value="ODEJMOWANIE" id="odejmowanie" onclick="roznica_hor()">
+    <input type="button" value="DZIELENIE" id="dzielenie" onclick="iloraz_hor()">
+    <input type="button" value="MNOŻENIE" id="mnozenie" onclick="iloczyn_hor()">
+    <input type="button" value="TEORIA Hordiichuk" id="teoria" onclick="teoria_hor()">
+
+    <p id="wynik"></p>
+
+    
+
+</body>
+</html>

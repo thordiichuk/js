@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Zadanie 52</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="39">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 54</title>
+</head>
+<body>
+    <script>
+        let nazwisko_hor=prompt("Podaj swoje nazwisko");
+        let imie_hor=prompt("Podaj swoje imie");
+
+        let a_hor=(nazwisko_hor.length%4)+5;
+        let b_hor=(imie_hor.length%6)+20;
+
+
+        document.write("&nbsp;".repeat(b_hor)+"b"+"<br>");
+
+        for(i=0;i<b_hor;i++){
+            document.write("*");
+        }
+
+        document.write("<br>");
+        
+        for(i=0;i<a_hor-2;i++){
+            document.write("*"+"&nbsp; ".repeat(b_hor-2)+"*");
+
+            if(i==Math.floor(a_hor/2-1)){
+                document.write("&nbsp; ".repeat(5)+"a");
+            }
+
+            document.write("<br>");
+            
+        }
+
+        for(i=0;i<b_hor;i++){
+            document.write("*");
+        }
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

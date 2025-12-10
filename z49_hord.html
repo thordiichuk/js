@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 49</title>
+</head>
+<body>
+    <script>
+        let n_hor=parseFloat(prompt("Podaj liczbę n"));
+        let silnia_hor=1; 
+
+        if(n_hor==0){
+            document.write("Silnia ");
+        }
+        if(n_hor<0){
+            document.write("Silnia z ujemnej liczby nie istnieje");
+        }
+        else{
+            document.write("n=" +n_hor+"<br>");
+
+            for(i=1;i<=n_hor;i++){
+                silnia_hor=silnia_hor*i; 
+            }
+            document.write(n_hor+"!="+silnia_hor);
+        }
+    </script>
+</body>
+</html>

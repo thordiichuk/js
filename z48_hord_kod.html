@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 48</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="65">
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadanie 48</title>
+    </head>
+<body>
+
+    <h2>Ćwiczenie wstępne</h2>
+
+    <p id="wynik1"></p>
+    <p id="wynik2"></p>
+    <p id="wynik3"></p>
+    <p id="wynik4"></p>
+
+    <h2>Zadanie 48</h2>
+    <p id="suma_hor"></p>
+
+        <script>
+            let suma1_hor = 0;
+            for (let i_hor = 2; i_hor <= 4; i_hor++) {
+                suma1_hor += i_hor * i_hor;
+            }
+            document.getElementById("wynik1").innerHTML ="Suma 1 (Σ i² od 2 do 4) = " + suma1_hor.toFixed(2);
+
+
+            let suma2_hor = 0;
+            for (let i_hor = 1; i_hor <= 3; i_hor++) {
+                suma2_hor += i_hor / (i_hor + 2);
+            }
+            document.getElementById("wynik2").innerHTML ="Suma 2 (Σ i/(i+2) od 1 do 3) = " + suma2_hor.toFixed(2);
+
+
+            let suma3_hor = 0;
+            for (let i_hor = 1; i_hor <= 4; i_hor++) {
+                suma3_hor += i_hor ** 3;
+            }
+            document.getElementById("wynik3").innerHTML ="Suma 3 (Σ i³ od 1 do 4) = " + suma3_hor.toFixed(2);
+
+
+            let suma4_hor = 0;
+            for (let i_hor = 1; i_hor <= 1000000; i_hor++) {
+                suma4_hor += 1 / i_hor;
+            }
+            document.getElementById("wynik4").innerHTML = "Suma 4 (Σ 1/i od 1 do 1 000 000) = " + suma4_hor.toFixed(2);
+
+
+            let suma_hor = 0;
+            let i_hor = 1;
+
+            while (i_hor <= 1000000) {
+                suma_hor = suma_hor + 1 / i_hor;
+                i_hor++;
+            }
+
+            document.getElementById("suma_hor").innerHTML ="Suma = " + suma_hor.toFixed(2);
+
+        </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

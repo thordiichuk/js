@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie 55</title>
+</head>
+<body>
+    <script>
+        let l1_t_hor;
+        let l2_t_hor;
+        
+        do{
+        l1_t_hor = parseFloat(prompt("Podaj liczbę 1"));
+
+        if (l1_t_hor<20 || l1_t_hor>60){
+            alert("Liczba 1 nie jest z przedziału <20,60>");
+        }
+        } while(l1_t_hor<20 || l1_t_hor>60);
+
+
+        do{
+        l2_t_hor = parseFloat(prompt("Podaj liczbę 2"));
+
+        if (l2_t_hor<20 || l2_t_hor>60){
+            alert("Liczba 2 nie jest z przedziału <20,60>");
+        }
+        } while(l2_t_hor<20 || l2_t_hor>60);
+
+
+        let pocz_hor = parseFloat(prompt("Podaj wartość początkową wielkości tekstu"));
+        let tekst_hor = prompt("Podaj dowolny tekst");
+
+        
+        if(l1_t_hor<l2_t_hor){
+            for(i=pocz_hor;i<=100;i=i+5){
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_hor+"<br></p>");
+            };
+        }
+
+        if(l1_t_hor>l2_t_hor){
+            for(i=pocz_hor;i>=0;i=i-5){
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_hor+"<br></p>");
+            };
+        }
+
+        if(l1_t_hor==l2_t_hor){
+            document.write("<p style=\"font-size:"+pocz_hor+"px; color: black;\"><br>"+tekst_hor+"<br></p>");
+        }
+        
+    </script>
+</body>
+</html>

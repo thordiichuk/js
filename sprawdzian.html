@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprawdzian</title>
+</head>
+<body>
+    <h2>Temat: działania na równaniu kwadratowym, uwzglęgniająć wszystkie znaki matematyczne</h2>
+    <script>
+        //ax^2+bx+c=0
+        let a_hor;
+        let b_hor;
+        let c_hor;
+
+        do{
+            a_hor=parseFloat(prompt("Podaj a"));
+
+            if(a_hor==0){
+                alert("Spróbuj ponownie. Wartość nie może być równa zero.")
+            }
+
+            if(isNaN(a_hor)){
+                alert("Podaj wartość a.");
+            }
+        }while(a_hor==0 || isNaN(a_hor))
+
+
+        do{
+            b_hor=parseFloat(prompt("Podaj b"));
+
+             if(isNaN(b_hor)){
+                alert("Podaj wartość b.");
+            }
+        }while(isNaN(b_hor))
+
+        
+        do{
+            c_hor=parseFloat(prompt("Podaj c"));
+
+             if(isNaN(c_hor)){
+                alert("Podaj wartość c.");
+            }
+        }while(isNaN(c_hor))
+
+
+        let delta_hor=b_hor*b_hor-(4*a_hor*c_hor);
+        let x1_hor=(-b_hor-Math.sqrt(delta_hor))/(2*a_hor);
+        let x2_hor=(-b_hor+Math.sqrt(delta_hor))/(2*a_hor);
+        let x0_hor=-b_hor/(2*a_hor);
+        let p_hor=-b_hor/(2*a_hor);
+        let q_hor=-delta_hor/(4*a_hor);
+        let w_hor="("+p_hor.toFixed(2)+","+q_hor.toFixed(2)+")";
+
+
+        //wypisywanie postaci ogolnej
+        document.write("Postać ogólna: ");
+        document.write(a_hor+"x<sup>2</sup>");
+       
+        if(b_hor>0){
+            document.write("+"+b_hor+"x");
+        }
+        else if(b_hor<0){
+            document.write(b_hor+"x");
+        }
+        if(c_hor>0){
+            document.write("+"+c_hor);
+        }
+        else if(c_hor<0){
+            document.write(c_hor);
+        }
+
+        document.write("<br>");
+
+
+        //wypisywanie postaci kanonicznej
+        document.write("Postać kanoniczna: f(x)="+a_hor+"(x");
+        if(delta_hor==0){
+            if(x0_hor<0){
+                document.write("+"+Math.abs(x0_hor.toFixed(2))+")<sup>2</sup>")
+            }
+            else{
+                document.write("-"+Math.abs(x0_hor.toFixed(2))+")<sup>2</sup>")
+            }
+
+            document.write("<br>");
+
+        }
+        else{
+            if(p_hor<0){
+                document.write("+"+Math.abs(p_hor.toFixed(2)).toFixed(2)+")<sup>2</sup>");
+            }
+            else{
+                document.write("-"+Math.abs(p_hor.toFixed(2)).toFixed(2)+")<sup>2</sup>");
+            }
+
+            if(q_hor>0){
+                document.write("+"+q_hor.toFixed(2));
+            }
+            else if(q_hor<0){
+                document.write(q_hor.toFixed(2));
+            }
+
+            document.write("<br>");
+
+        }
+
+
+        //wypisywanie postaci iloczynowej
+
+        if(delta_hor>0){
+            document.write("Postać iloczynowa: "+"f(x)="+a_hor+"(x");
+            if(x1_hor<0){
+                document.write("+"+Math.abs(x1_hor).toFixed(2)+")(x");
+            }
+            else if(x1_hor>=0){
+                document.write("-"+x1_hor.toFixed(2)+")(x");
+            }
+            
+            
+            if(x2_hor<0){
+                document.write("+"+Math.abs(x2_hor).toFixed(2)+")");
+            }
+            else if(x2_hor>=0){
+                document.write("-"+x2_hor.toFixed(2)+")");
+            }
+
+            document.write("<br>");
+
+        }
+
+        if(delta_hor==0){
+            document.write("Postać iloczynowa: "+"f(x)="+a_hor+"(x");
+
+            if(x0_hor>0){
+                document.write("-"+x0_hor.toFixed(2)+")<sup>2</sup>")
+            }
+            else{
+                document.write("+"+Math.abs(x0_hor)).toFixed(2)+")<sup>2</sup>"
+            }
+            
+            document.write("<br>");
+
+        }
+
+        if(delta_hor<0){
+            document.write("Postać iloczynowa nie istnieje"+"<br>");
+        }
+
+
+        document.write("<br>");
+        document.write("<br>");
+        
+        document.writeln("Delta="+delta_hor+"<br>");
+
+        if(delta_hor>0){
+            document.writeln("x1="+x1_hor.toFixed(2)+"<br>");
+            document.writeln("x2="+x2_hor.toFixed(2)+"<br>");
+        }
+        else if(delta_hor<0){
+            document.writeln("Brak rozwiązań x"+"<br>");
+        }
+        else{
+            document.writeln("x0="+x0_hor.toFixed(2)+"<br>");
+        }
+        
+        document.writeln("Wierzchołek="+w_hor+"<br>");
+        document.writeln("p="+p_hor.toFixed(2)+"<br>");
+        document.writeln("q="+q_hor.toFixed(2)+"<br>");
+
+    </script>
+</body>
+</html>
