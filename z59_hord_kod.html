@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 59</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="46">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 59</title>
+</head>
+<body>
+    <h2>Temat: Obliczanie ilości punktów kratowych z użyciem pętli podwójnej.</h2>
+    <script>
+        let r_hor;
+
+        do{
+            r_hor=parseFloat(prompt("Podaj promień koła"));
+            
+            if(r_hor<0){
+                alert("Promień nie może być ujemny");
+            }
+        }while(r_hor<0)
+
+        let n_hor=0;
+
+        if(r_hor==0){
+            n_hor=1;
+        }
+
+        else{
+        for(i_hor=Math.ceil(-r_hor); i_hor<=Math.floor(r_hor) ;i_hor++){
+            
+            for(j_hor=Math.ceil(-r_hor); j_hor<=Math.floor(r_hor); j_hor++){
+                if((i_hor*i_hor)+(j_hor*j_hor)<=r_hor*r_hor){
+                    n_hor++;
+                }
+            }
+
+        }
+        }
+
+        document.write("Promień koła: "+r_hor+"<br>");
+        document.write("Liczba punktów kratowych: " + n_hor);
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>
