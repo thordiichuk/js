@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod zadanie 58</title>
+</head>
+<body>
+    <textarea name="" id="" cols="100" rows="42">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 58 </title>
+</head>
+<body>
+
+    <div id="wynik1" style="color: green; font-size: 40px;"></div>
+    <div id="wynik2" style="color: skyblue; font-size: 20px;"></div>
+    <script>
+        let a = Number(prompt("Podaj liczbę 1"));
+        let b = Number(prompt("Podaj liczbę 2"));
+        let wynik = " ";
+
+        if(a<b){
+        for( i=a;i<=b;i++){
+            if(i%2!=0){
+                wynik = wynik + i + " ";
+                }
+            }
+            document.getElementById('wynik1').innerHTML=wynik;
+        }
+
+        else if(a>b){
+        for( i=a;i>=b;i--){
+            if(i%2!=0){
+                wynik = wynik + i + " ";
+                }
+            }
+            document.getElementById('wynik2').innerHTML=wynik;
+        }
+        
+        else{
+            confirm("Brak obliczeń");
+        }        
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>
